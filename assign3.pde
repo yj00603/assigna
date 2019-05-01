@@ -108,7 +108,8 @@ void draw() {
 		for(int x = 0; x < width; x += soilsize){
       for(int j = 0; j < 24; j++){ 
         soilY = soilY0 + soilsize*j;
-        image(soilPImage[j/4], x, soilY);
+	int a = j/4;
+        image(soilPImage[a], x, soilY);
       }
     }
     //first stone
